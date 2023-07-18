@@ -1,0 +1,159 @@
+* {
+    font-family: work sans;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #ff900e1a;
+    padding-bottom: 30px;
+
+}
+
+/* common styles */
+.common-txt {
+    color: #727272;
+    font-size: 1rem;
+}
+
+.common-btn {
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    background-color: #FF900E;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+/* navbar */
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 180px;
+
+}
+
+header>nav>h3, ul {
+    width: 50%;
+}
+
+header>nav>h3 {
+    font-size: 2.3rem;
+    color: #131313;
+}
+
+header>nav>ul {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+
+}
+
+header>nav>ul>li {
+    list-style: none;
+
+}
+
+header>nav>ul>li>a {
+    text-decoration: none;
+    font-family: 'space mono';
+    color: #424242;
+    font-size: 1.2rem;
+}
+
+
+/* Main Header */
+.header-container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 180px;
+
+}
+
+.txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 750px;
+}
+
+.header-txt>h1 {
+    color: #131313;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+.header-container img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* responsive section */
+/* Mobile Phones */
+@media screen and (max-width: 576px) {
+    .common-btn {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+
+    header>nav {
+        display: flex;
+        align-items: center;
+        padding-inline: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header>nav>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header>nav>h3, ul {
+        width: 100%;
+    }
+
+    .header-container {
+        margin-inline: 20px;
+        padding-top: 20px;
+    }
+
+    .header-txt>h1 {
+        font-size: 3rem;
+    }
+
+    .common-txt {
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 1000px) {
+    .common-btn {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+
+    header>nav {
+        display: flex;
+        align-items: center;
+        padding-inline: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt>h1 {
+        font-size: 3rem;
+    }
+}
